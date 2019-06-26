@@ -2,7 +2,7 @@
   "license": "Patch (c) by qub1t.  This patch is licensed under a Creative Commons Attribution 4.0 International License.  You should have received a copy of the license along with this work.  If not, see <http://creativecommons.org/licenses/by/4.0/>.",
   "synth_version": "0.9.0",
   "patch_name": "breakfast, lunch, and dinner",
-  "folder_name": "bass",
+  "folder_name": "bass2",
   "author": "qub1t",
   "settings": {
     "amp_attack": 0,
@@ -18,7 +18,7 @@
     "arp_tempo": 8,
     "beats_per_minute": 2,
     "cross_modulation": 0,
-    "cutoff": 52.337499999999998579,
+    "cutoff": 35.695378151260506172,
     "delay_dry_wet": 0.12688555280457258778,
     "delay_feedback": 0.32799994945526123047,
     "delay_frequency": 2.0000002384185791016,
@@ -32,7 +32,7 @@
     "fil_attack": 0,
     "fil_decay": 1.1289364281717775285,
     "fil_env_depth": 8.3600000000000136424,
-    "fil_release": 0.93263409998558932656,
+    "fil_release": 0.93263409998558921554,
     "fil_sustain": 0.33999999999999996891,
     "filter_blend": 0,
     "filter_drive": -12,
@@ -48,11 +48,11 @@
     "mod_decay": 0.14062500558793544769,
     "mod_release": 0,
     "mod_sustain": 0,
-    "mono_lfo_1_amplitude": 1,
+    "mono_lfo_1_amplitude": 0,
     "mono_lfo_1_frequency": 1.0000002384185791016,
     "mono_lfo_1_retrigger": 0,
     "mono_lfo_1_sync": 1,
-    "mono_lfo_1_tempo": 6,
+    "mono_lfo_1_tempo": 8,
     "mono_lfo_1_waveform": 0,
     "mono_lfo_2_amplitude": 1,
     "mono_lfo_2_frequency": 1.0000002384185791016,
@@ -84,9 +84,9 @@
     "poly_lfo_tempo": 7,
     "poly_lfo_waveform": 0,
     "polyphony": 1,
-    "portamento": -8.2417497634887695312,
-    "portamento_type": 2,
-    "resonance": 0.14000000000000001332,
+    "portamento": -7.9028747749328616123,
+    "portamento_type": 1,
+    "resonance": 0.013333333333333308168,
     "reverb_damping": 0.1097656249999999778,
     "reverb_dry_wet": 0.10439062500000000078,
     "reverb_feedback": 0.83174687499999999662,
@@ -143,8 +143,13 @@
     "unison_1_harmonize": 0,
     "unison_2_harmonize": 0,
     "velocity_track": 0.285968780517578125,
-    "volume": 0.97174484487628509655,
+    "volume": 0.97174484487628520757,
     "modulations": [
+      {
+        "source": "mod_wheel",
+        "destination": "mono_lfo_1_amplitude",
+        "amount": 0.61084057526730006771
+      },
       {
         "source": "fil_envelope",
         "destination": "cutoff",
@@ -154,6 +159,21 @@
         "source": "fil_envelope",
         "destination": "resonance",
         "amount": 0.38516800017934738065
+      },
+      {
+        "source": "velocity",
+        "destination": "cutoff",
+        "amount": 32.544975328438283668
+      },
+      {
+        "source": "velocity",
+        "destination": "resonance",
+        "amount": 0.26346328367587945607
+      },
+      {
+        "source": "mono_lfo_1",
+        "destination": "osc_1_tune",
+        "amount": 0.59600000000000008527
       }
     ]
   }

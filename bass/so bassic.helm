@@ -2,7 +2,7 @@
   "license": "Patch (c) by qub1t.  This patch is licensed under a Creative Commons Attribution 4.0 International License.  You should have received a copy of the license along with this work.  If not, see <http://creativecommons.org/licenses/by/4.0/>.",
   "synth_version": "0.9.0",
   "patch_name": "so bassic",
-  "folder_name": "bass",
+  "folder_name": "bass2",
   "author": "qub1t",
   "settings": {
     "amp_attack": 0.069275343831199098776,
@@ -18,7 +18,7 @@
     "arp_tempo": 9,
     "beats_per_minute": 2,
     "cross_modulation": 0,
-    "cutoff": 85.3984832763671875,
+    "cutoff": 45.262605042016801349,
     "delay_dry_wet": 0.49730287297508896094,
     "delay_feedback": 0.32138385909656813633,
     "delay_frequency": 1.7772393521990972332,
@@ -26,7 +26,7 @@
     "delay_sync": 1,
     "delay_tempo": 7,
     "distortion_drive": 6.0787510871887207031,
-    "distortion_mix": 0.97350866481733577817,
+    "distortion_mix": 0.9735086648173358892,
     "distortion_on": 1,
     "distortion_type": 0,
     "fil_attack": 0,
@@ -43,16 +43,16 @@
     "formant_x": 0.48028401717998048248,
     "formant_y": 0.5320956656611790514,
     "keytrack": 0.094206962256979137615,
-    "legato": 0,
+    "legato": 1,
     "mod_attack": 0.27739839836708024556,
     "mod_decay": 0.63709608821906082987,
     "mod_release": 2.2646834630358436691,
     "mod_sustain": 0.43380475993092509901,
-    "mono_lfo_1_amplitude": 1,
-    "mono_lfo_1_frequency": 0.95900502383370023196,
+    "mono_lfo_1_amplitude": 0,
+    "mono_lfo_1_frequency": 0.95900502383370012094,
     "mono_lfo_1_retrigger": 2,
     "mono_lfo_1_sync": 1,
-    "mono_lfo_1_tempo": 6,
+    "mono_lfo_1_tempo": 8,
     "mono_lfo_1_waveform": 0,
     "mono_lfo_2_amplitude": 0.987482605339034758,
     "mono_lfo_2_frequency": 0.86558600493745008198,
@@ -66,7 +66,7 @@
     "osc_1_tune": 0,
     "osc_1_unison_detune": 17.263948777525776279,
     "osc_1_unison_voices": 7,
-    "osc_1_volume": 0.88530322837689512383,
+    "osc_1_volume": 0.88530322837689501281,
     "osc_1_waveform": 2,
     "osc_2_transpose": -12,
     "osc_2_tune": 0.2999999999999999889,
@@ -83,9 +83,9 @@
     "poly_lfo_sync": 1,
     "poly_lfo_tempo": 8,
     "poly_lfo_waveform": 0,
-    "polyphony": 4,
-    "portamento": -6.779560613409501002,
-    "portamento_type": 0,
+    "polyphony": 1,
+    "portamento": -7.9028747749328616123,
+    "portamento_type": 1,
     "resonance": 0,
     "reverb_damping": 0,
     "reverb_dry_wet": 0.25721655916345143034,
@@ -146,9 +146,39 @@
     "volume": 0.75147189286800308849,
     "modulations": [
       {
+        "source": "velocity",
+        "destination": "cutoff",
+        "amount": 26.798280885947050933
+      },
+      {
+        "source": "mod_wheel",
+        "destination": "poly_lfo_amplitude",
+        "amount": 2
+      },
+      {
+        "source": "mono_lfo_1",
+        "destination": "osc_1_tune",
+        "amount": 0.59600000000000008527
+      },
+      {
+        "source": "velocity",
+        "destination": "resonance",
+        "amount": 0.1520361196236146295
+      },
+      {
+        "source": "mod_wheel",
+        "destination": "mono_lfo_1_amplitude",
+        "amount": 0.61084057526730006771
+      },
+      {
         "source": "fil_envelope",
         "destination": "cutoff",
         "amount": 20
+      },
+      {
+        "source": "poly_lfo",
+        "destination": "osc_1_tune",
+        "amount": 0.4000000000000000222
       },
       {
         "source": "fil_envelope",
@@ -159,16 +189,6 @@
         "source": "poly_lfo",
         "destination": "osc_2_tune",
         "amount": 0.4000000000000000222
-      },
-      {
-        "source": "poly_lfo",
-        "destination": "osc_1_tune",
-        "amount": 0.4000000000000000222
-      },
-      {
-        "source": "mod_wheel",
-        "destination": "poly_lfo_amplitude",
-        "amount": 2
       }
     ]
   }

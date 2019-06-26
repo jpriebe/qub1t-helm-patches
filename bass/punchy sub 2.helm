@@ -2,7 +2,7 @@
   "license": "Patch (c) by qub1t.  This patch is licensed under a Creative Commons Attribution 4.0 International License.  You should have received a copy of the license along with this work.  If not, see <http://creativecommons.org/licenses/by/4.0/>.",
   "synth_version": "0.9.0",
   "patch_name": "punchy sub 2",
-  "folder_name": "bass",
+  "folder_name": "bass2",
   "author": "qub1t",
   "settings": {
     "amp_attack": 0,
@@ -18,7 +18,7 @@
     "arp_tempo": 9,
     "beats_per_minute": 1.8443005961530052339,
     "cross_modulation": 0,
-    "cutoff": 53.987499999999997158,
+    "cutoff": 39.85504201680672054,
     "delay_dry_wet": 0.53495122019444385497,
     "delay_feedback": 0.79461469695692543702,
     "delay_frequency": 2.2061408207948702831,
@@ -43,16 +43,16 @@
     "formant_x": 0.46126422192219307394,
     "formant_y": 0.48276937466820013523,
     "keytrack": -0.073884059844400440387,
-    "legato": 0,
+    "legato": 1,
     "mod_attack": 0.12804136157245871175,
     "mod_decay": 0.71732843687153957646,
     "mod_release": 0.4001232168505317599,
     "mod_sustain": 0.96976013203118405226,
-    "mono_lfo_1_amplitude": 1,
+    "mono_lfo_1_amplitude": 0,
     "mono_lfo_1_frequency": 1.1004913449339053244,
     "mono_lfo_1_retrigger": 2,
     "mono_lfo_1_sync": 1,
-    "mono_lfo_1_tempo": 6,
+    "mono_lfo_1_tempo": 8,
     "mono_lfo_1_waveform": 0,
     "mono_lfo_2_amplitude": 0.90022120508650316228,
     "mono_lfo_2_frequency": 1.4652580261957406371,
@@ -83,9 +83,9 @@
     "poly_lfo_sync": 1,
     "poly_lfo_tempo": 8,
     "poly_lfo_waveform": 0,
-    "polyphony": 12,
-    "portamento": -6.6272537110791747139,
-    "portamento_type": 0,
+    "polyphony": 1,
+    "portamento": -7.9028747749328616123,
+    "portamento_type": 1,
     "resonance": 0.16666666666666662966,
     "reverb_damping": 0.029118429529333411665,
     "reverb_dry_wet": 0.26344575396097852371,
@@ -146,6 +146,21 @@
     "volume": 0.75643446750458376293,
     "modulations": [
       {
+        "source": "velocity",
+        "destination": "cutoff",
+        "amount": 32.544975328438283668
+      },
+      {
+        "source": "velocity",
+        "destination": "resonance",
+        "amount": 0.26346328367587945607
+      },
+      {
+        "source": "mono_lfo_1",
+        "destination": "osc_1_tune",
+        "amount": 0.59600000000000008527
+      },
+      {
         "source": "fil_envelope",
         "destination": "cutoff",
         "amount": -20
@@ -159,6 +174,11 @@
         "source": "poly_lfo",
         "destination": "osc_2_tune",
         "amount": 0.4000000000000000222
+      },
+      {
+        "source": "mod_wheel",
+        "destination": "mono_lfo_1_amplitude",
+        "amount": 0.61084057526730006771
       },
       {
         "source": "poly_lfo",

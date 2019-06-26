@@ -2,7 +2,7 @@
   "license": "Patch (c) by qub1t.  This patch is licensed under a Creative Commons Attribution 4.0 International License.  You should have received a copy of the license along with this work.  If not, see <http://creativecommons.org/licenses/by/4.0/>.",
   "synth_version": "0.9.0",
   "patch_name": "bombas",
-  "folder_name": "bass",
+  "folder_name": "bass2",
   "author": "qub1t",
   "settings": {
     "amp_attack": 0,
@@ -18,7 +18,7 @@
     "arp_tempo": 8,
     "beats_per_minute": 2,
     "cross_modulation": 0,
-    "cutoff": 44.912500000000001421,
+    "cutoff": 33.407563025210080809,
     "delay_dry_wet": 0.12688555280457258778,
     "delay_feedback": 0.32799994945526123047,
     "delay_frequency": 2.0000002384185791016,
@@ -43,16 +43,16 @@
     "formant_x": 0.72602739726027387679,
     "formant_y": 1,
     "keytrack": 0,
-    "legato": 0,
+    "legato": 1,
     "mod_attack": 0,
     "mod_decay": 0.14062500558793544769,
     "mod_release": 0,
     "mod_sustain": 0,
-    "mono_lfo_1_amplitude": 1,
+    "mono_lfo_1_amplitude": 0,
     "mono_lfo_1_frequency": 1.0000002384185791016,
     "mono_lfo_1_retrigger": 0,
     "mono_lfo_1_sync": 1,
-    "mono_lfo_1_tempo": 6,
+    "mono_lfo_1_tempo": 8,
     "mono_lfo_1_waveform": 0,
     "mono_lfo_2_amplitude": 1,
     "mono_lfo_2_frequency": 1.0000002384185791016,
@@ -84,8 +84,8 @@
     "poly_lfo_tempo": 7,
     "poly_lfo_waveform": 2,
     "polyphony": 1,
-    "portamento": -7.5828747749328613281,
-    "portamento_type": 2,
+    "portamento": -7.9028747749328616123,
+    "portamento_type": 1,
     "resonance": 0.093333333333333379223,
     "reverb_damping": 0,
     "reverb_dry_wet": 0.15022495803714475127,
@@ -143,12 +143,12 @@
     "unison_1_harmonize": 0,
     "unison_2_harmonize": 0,
     "velocity_track": 0,
-    "volume": 0.97174484487628509655,
+    "volume": 0.97174484487628520757,
     "modulations": [
       {
         "source": "fil_envelope",
         "destination": "formant_x",
-        "amount": -0.99620108396701867459
+        "amount": -0.99620108396701878561
       },
       {
         "source": "fil_envelope",
@@ -161,6 +161,31 @@
         "amount": 96
       },
       {
+        "source": "fil_envelope",
+        "destination": "noise_volume",
+        "amount": 0.50781248044222593307
+      },
+      {
+        "source": "velocity",
+        "destination": "cutoff",
+        "amount": 32.544975328438283668
+      },
+      {
+        "source": "velocity",
+        "destination": "resonance",
+        "amount": 0.26346328367587945607
+      },
+      {
+        "source": "mono_lfo_1",
+        "destination": "osc_1_tune",
+        "amount": 0.59600000000000008527
+      },
+      {
+        "source": "mod_wheel",
+        "destination": "mono_lfo_1_amplitude",
+        "amount": 0.61084057526730006771
+      },
+      {
         "source": "mod_envelope",
         "destination": "osc_2_transpose",
         "amount": 96
@@ -169,11 +194,6 @@
         "source": "fil_envelope",
         "destination": "cutoff",
         "amount": 29.627295046418510083
-      },
-      {
-        "source": "fil_envelope",
-        "destination": "noise_volume",
-        "amount": 0.50781248044222593307
       }
     ]
   }
